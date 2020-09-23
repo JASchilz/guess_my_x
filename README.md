@@ -9,11 +9,18 @@ $: pip install guess_my_x
 ## Playing
 
 ```python
->>> from guess_my_x import GMX
+# main.py
+from guess_my_x import GMX
 
->>> guess_my_number = GMX(list(range(100)))
+guess_my_number = GMX(list(range(100)))
 
->>> guess_my_number.play(rounds=15)
+if __name__ == "__main__":
+    guess_my_number.play(rounds=15)
+```
+
+```bash
+$: python main.py
+
 Your guess:
 ```
 
